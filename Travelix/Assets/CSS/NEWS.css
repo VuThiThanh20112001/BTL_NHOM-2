@@ -42,9 +42,6 @@
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
 }
-.fa-search:before {
-    content: "\f002";
-}
 .m1 {
     flex: 0 0 100%;
     max-width: 100%;
