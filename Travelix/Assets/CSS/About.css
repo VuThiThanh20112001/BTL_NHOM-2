@@ -213,12 +213,14 @@
     height: 295px;
     margin: 0 15px;
     margin-bottom: 90px;
+    position: relative;
 }
 .sale_content{
-    position: relative;
+    position: absolute;
     top: 70px;
     left: 180px;
     width: 300px;
+
 }
 .sale_content h1{
     color:#fff;
@@ -264,3 +266,59 @@
     color: #9a9999;
     font-weight: 600;
 }
+/* tablet */
+@media screen and (min-width:740px) and (max-width:1023px){
+   .intro-img {
+       padding: 0px 9px;
+   }
+}
+/* mobile */
+@media screen and (max-width:739px){
+    .intro__image img {
+        max-width: 100%;
+    }
+    .intro {
+        display: inline-block;
+    }
+    .intro-content{
+        width: auto;
+    }
+    .About__title h1,
+    .sale_content h1{
+        font-size: 30px;
+    }
+    .sale_content{
+        left: 20%;
+        top: 20%;
+    }
+    .tour__item--btn a{
+        line-height: 42px;
+    }
+    .intro {
+        padding: 0px;
+    }
+    .statis_row_text span {
+        font-size: 20px;
+    }
+    .statis_content_2016 img {
+        padding-right: 10px;
+    }
+    .statis_content_2017 img{
+        padding-left: 10px;
+    }
+    .statis_percent {
+        padding: 0 15px;
+    }
+    .milestones{
+        display: block;
+    }
+    .clients,
+    .projects,
+    .countries,
+    .cofees
+    {
+        
+        width: 100%;
+    }
+}
+
