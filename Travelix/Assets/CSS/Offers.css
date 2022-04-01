@@ -100,7 +100,7 @@
     width: calc(100% + 8px);
     height: 2px;
     position: absolute;
-    top: 135%;
+    top: calc((50% + 20px));
     left: -4px;
     background-image: linear-gradient(to right, #fa9e1b, #8d4fff);
     opacity: 0;
