@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Assets/CSS/About.css">
     <link rel="stylesheet" href="./Assets/CSS/Home.css">
     <link rel="stylesheet" href="./Assets/CSS/grid.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <title>Travelix</title>
 </head>
 
@@ -19,7 +20,7 @@
             <div class="grid wide">
                 <div class="header__top">
                     <div class="row">
-                        <div class=" col l-6 m-8 c-8">
+                        <div class=" col l-6 m-8">
                             <div class="header__top-left">
                                 <span>+84 945 000 917</span>
                                 <a href="#"><i class="fab fa-pinterest"></i></a>
@@ -30,7 +31,7 @@
                                 <a href="#"><i class="fab fa-pinterest"></i></a>
                             </div>
                         </div>
-                        <div class=" col l-6 m-4 c-4">
+                        <div class=" col l-6 m-4 c-0">
                             <div class="header__top-right">
                                 <a href="#">LOGIN</a>
                                 <a href="#">REGISTER</a>
@@ -42,9 +43,9 @@
         </div>
         <div class="header__nav">
             <div class="grid wide">
-                <div class="header__nav__container">
+                <div class="header__nav__container" id="header__nav__container">
                     <div class="row">
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-8">
                             <div class="header__nav__container-logo">
                                 <span> TRAVELIX</span>
                             </div>
@@ -60,7 +61,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-2">
                             <div class="header__nav__container-search" style="position: relative;">
                                 <a href="#"><i class="fas fa-search"></i></a>
                                 <div class="open-menu l-0">
@@ -81,11 +82,11 @@
             <label class="open__menu" for="open__menu">
                 <div class="menu__lists">
                     <ul>
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="home.html">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">OFFERS</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="Offers.html">OFFERS</a></li>
+                        <li><a href="News.html">NEWS</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fas fa-times" id="menu_close"></i>
@@ -281,7 +282,7 @@
                     <div class="footer__container__col1">
                         <div class="footer__container__col1__logo">
                             <a href="#">
-                                <img src="image/footer-logo.webp" alt="">
+                                <img src="./Assets/IMG/Home/footer-logo.webp" alt="">
                                 TRAVELIX
                             </a>
                         </div>
@@ -366,7 +367,11 @@
         </div>
     </div>
 </footer>
+<div class="scroll-top">
+        <i class="fas fa-arrow-up "></i>
+</div>
 
+<script src="./Assets/JS/About.js"></script>
 
 </body>
 

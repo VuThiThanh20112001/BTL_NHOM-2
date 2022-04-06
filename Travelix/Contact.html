@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Assets/CSS/grid.css">
     <link rel="stylesheet" href="./Assets/CSS/Home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <!-- Header -->
@@ -40,9 +41,9 @@
     </div>
     <div class="header__nav">
         <div class="grid wide">
-            <div class="header__nav__container">
+            <div class="header__nav__container" id="header__nav__container">
                 <div class="row">
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-8">
                         <div class="header__nav__container-logo">
                             <span> TRAVELIX</span>
                         </div>
@@ -58,7 +59,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-2">
                         <div class="header__nav__container-search" style="position: relative;">
                             <a href="#"><i class="fas fa-search"></i></a>
                             <div class="open-menu l-0">
@@ -79,10 +80,10 @@
         <label class="open__menu" for="open__menu">
             <div class="menu__lists">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">OFFERS</a></li>
-                    <li><a href="#">NEWS</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Offers.html">OFFERS</a></li>
+                    <li><a href="Contact.html">NEWS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -290,5 +291,9 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+<script src="./Assets/JS/About.js"></script>
 </body>
 </html>

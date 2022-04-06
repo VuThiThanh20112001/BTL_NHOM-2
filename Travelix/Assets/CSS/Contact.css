@@ -163,6 +163,8 @@ textarea{
 .contact_container_info span:hover{
     color: #fa9e1b;
 }
+/* ------------------------ */
+
 /* tablet */
 @media screen and (min-width:740px) and (max-width:1023px){
     .contact_form_name,
@@ -204,11 +206,18 @@ textarea{
     .contact_form{
         padding: 0;
     }
+    .contact_container{
+        padding: 0 4px;
+        margin-top: 40px;
+    }
     .contact_form_name,
     .contact_form_email{
-        width: 46%;
+        width: 45.4%;
     }
-    .contact_about img,
+    .contact_about img{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
     .contact_about_text,
     .contact_about_icon{
         padding: 0 20px;
@@ -223,8 +232,5 @@ textarea{
     }
     .contact_container_content img{
         padding: 0;
-    }
-    .contact_container {
-        padding: 20px 20px;
     }
 }
