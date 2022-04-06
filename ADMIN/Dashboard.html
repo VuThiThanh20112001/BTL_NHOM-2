@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="ASSET/IMG/Admin/logo_title.ico">
+    <link rel="stylesheet" href="ASSET/CSS/grid.css">
+    <link rel="stylesheet" href="ASSET/CSS/Dashboard.css">
+    <title>Travelix Admin</title>
+</head>
+<body>
+    <header class="row">
+        <div class="header__search header__left col l-3 m-5 c-0">
+            <input type="text" name="" id="header__search_ip">
+            <label for="header__search_ip"><button><i class="fa-solid fa-magnifying-glass"></i></button></label>
+        </div>
+        <div class="open_sidebar l-0 m-0 c-2">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header__right col l-9 m-7 c-10">
+            <div class="row">
+                <div class="notification l-8 m-3" >
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span  id="notification_number">3</span>
+                    </a>
+                    <div class="notification__content">
+                        <div class="notification_item">
+                            <div class="notification_item_img">
+                                <img src="ASSET/IMG/Dashboard/user_name_img.jpg" alt="">
+                            </div>
+                            <div class="notification_item_content">
+                                <span class="notification_item_name">Bùi Cường</span>
+                                <span>đã đánh giá</span>
+                            </div>
+                        </div>
+                        <div class="notification_item">
+                            <div class="notification_item_img">
+                                <img src="ASSET/IMG/Dashboard/user_name_img.jpg" alt="">
+                            </div>
+                            <div class="notification_item_content">
+                                <span class="notification_item_name">Bùi Cường</span>
+                                <span>đã đánh giá</span>
+                            </div>
+                        </div>
+                        <div class="notification_item">
+                            <div class="notification_item_img">
+                                <img src="ASSET/IMG/Dashboard/user_name_img.jpg" alt="">
+                            </div>
+                            <div class="notification_item_content">
+                                <span class="notification_item_name">Bùi Cường</span>
+                                <span>đã đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account l-4">
+                    <div class="Avatar">
+                        <img src="ASSET/IMG/Dashboard/user_name_img.jpg" alt="">
+                    </div>
+                    <div class="user__name">
+                        <div class="name">Bùi Đức Thắng <i class="fa-solid fa-caret-down" id="user_name_icon"></i></div>
+                        <ul class="user__name--menu_dropdown">
+                            <li class="user__name--menu_dropdown_list" >
+                                <i class="fa-solid fa-user"></i>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li class="user__name--menu_dropdown_list">
+                                <i class="fa-solid fa-bell"></i>
+                                <a href="#">Notification</a>
+                            </li>
+                            <li class="user__name--menu_dropdown_list">
+                                <i class="fa-solid fa-gear"></i>
+                                <a href="#">Setting</a>
+                            </li>
+                            <li class="user__name--menu_dropdown_list">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <a href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="coating l-0 m-0"></div>
+    <div class="sidebar">
+        <div class="sidebar__container">
+            <div class="sidebar__header">
+                <div class="sidebar__haeder-logo">
+                    <div class="sidebar__haeder-logo-img">
+                        <img src="ASSET/IMG/Dashboard/logo.webp" alt="">
+                    </div>
+                    <span>Modular Admin</span>
+                </div>
+            </div>
+            <div class="sidebar__menu">
+                <ul class="sidebar__menu__lists">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <a href="#">Item Manager</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <ul class="Item__Manager__Lists">
+                            <li class="Item__Manager__List">
+                                <a href="#">Item List</a>
+                            </li>
+                            <li class="Item__Manager__List">
+                                <a href="#">Item Editor</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard_page">
+        <div class="dashboard_page_container row">
+            <div class="stash_card_block col l-5 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-12 m-12">
+                            <div class="stash_card_block_title">
+                                <h4>Stats</h4>
+                                <p>Website metrics for <a href="#">your awesome project</a></p>
+                                
+                            </div>
+                        </div>
+                        <div class="col l-12 m-12">
+                            <div class="stash_container">
+                                <div class="row">
+                                    <div class="col l-6 m-4 stash_col">
+                                        <div class="stash_col_icon">
+                                            <i class="fa-solid fa-umbrella-beach"></i>
+                                        </div>
+                                        <div class="stash_col_content">
+                                            <div class="stash_col_number">12345</div>
+                                            <p>Tours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-4 stash_col">
+                                        <div class="stash_col_icon">
+                                            <i class="fa-solid fa-umbrella-beach"></i>
+                                        </div>
+                                        <div class="stash_col_content">
+                                            <div class="stash_col_number">12345</div>
+                                            <p>Tours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-4 stash_col">
+                                        <div class="stash_col_icon">
+                                            <i class="fa-solid fa-umbrella-beach"></i>
+                                        </div>
+                                        <div class="stash_col_content">
+                                            <div class="stash_col_number">12345</div>
+                                            <p>Tours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-4 stash_col">
+                                        <div class="stash_col_icon">
+                                            <i class="fa-solid fa-umbrella-beach"></i>
+                                        </div>
+                                        <div class="stash_col_content">
+                                            <div class="stash_col_number">12345</div>
+                                            <p>Tours</p>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="historical_column_graph col l-7 m-12 c-12">
+                
+                <div class="historical_column_graph_title">
+                    History
+                </div>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col l-12 travel_in_countries">
+                <div class="travel_in_countries_title">
+                    <h3>Travel in countries</h3>
+                </div>
+                <div class="travel_in_countries_map">
+                    <img src="ASSET/IMG/Dashboard/map.png" alt="Travel in countries">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ASSET/JS/Dashboard.js"></script>
+</body>
+</html>
