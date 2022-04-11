@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .exit {
     width: 45px;
@@ -17,6 +18,17 @@ body{
     border: solid 2px #fa9e1b ;
     border-radius: 50%;
     margin-right: 8px;
+    text-align: center;
+    background-color: #fa9e1b;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.exit i{
+    font-size: 20px;
+    position: relative;
+    top: 28%;
+    color: #fff;
 }
 form{
     background-color: #fff;
@@ -72,8 +84,48 @@ form span a{
     text-decoration: none;
     padding-left: 5px;
 }
-small{
-    color: red;
-    width: 90%;
-    padding-left: 5px;
+
+/* tablet */
+@media screen and (min-width:740px) and (max-width:1023px){
+    body{
+
+    }
+    form{
+        width: 700px;
+        display: block;
+    }
+    form h1{
+        font-size: 40px;
+    }
+    form input{
+        height: 100px;
+        width: 100%;
+        font-size: 30px;
+    }
+    form input::placeholder{
+        font-size: 25px;
+        padding: 30px;
+    }
+    form>div{
+        width: 100%;
+    }
+    form button{
+        font-size: 30px;
+        height: 50px;
+        width: 170px;
+        margin-left: 250px;
+        margin-top: 60px;
+    }
+    .exit{
+        height: 100px;
+        width: 100px;
+    }
+    .exit i{
+        font-size: 40px;
+    }
+
+}
+/* mobile */
+@media screen and (max-width:739px){
+    
 }

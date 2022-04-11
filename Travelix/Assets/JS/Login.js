@@ -2,7 +2,7 @@
 //Hàm hiển thị lỗi
 var users = [
     {
-        username: "admin@gmail.com",
+        username: "admin@e.tlu.edu.vn",
         password: "123",
         permission: "admin"
     }
