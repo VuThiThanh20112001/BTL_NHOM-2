@@ -1049,7 +1049,7 @@ footer.grid{
 }
 /* ----------------------------------------------------------------------- */
 /* tablet */
-@media screen and (min-width:740px) and (max-width:1024px){
+@media screen and (min-width:740px) and (max-width:1023px){
     .header__top-left>span,
     .header__top-right a{
         font-size: 10px;

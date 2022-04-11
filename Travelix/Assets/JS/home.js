@@ -14,7 +14,7 @@ window.addEventListener('scroll',function(){
     else{
         header__nav__container.classList.remove('header__nav__container__scroll')
         header__nav__container.classList.add('header__nav__container')
-        open_menu.style.left='80%';
+        open_menu.style.left='95%';
         open_menu.style.top='-5px';
         scroll_top.style.display="none";
     }
