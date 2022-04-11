@@ -341,6 +341,7 @@
     align-items: center;
     font-weight: 600;
     background-color: #fff;
+    transition: all .3s linear;
 }
 .search__tab img{
    padding-right: 7px;
@@ -350,6 +351,13 @@
     color: #fff;
 }
 .search__tab input:checked+label>img{
+    filter: brightness(200);
+}
+.search__tab input:hover+label{
+    background-color: #fa9e1b;
+    color: #fff;
+}
+.search__tab input:hover+label>img{
     filter: brightness(200);
 }
 /* -------------------------------------------------------------------------- */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="shortcut icon" href="ASSET/IMG/Admin/logo_title.ico">
+    <link rel="shortcut icon" href="ASSET/IMG/Dashboard/logo_title.ico">
     <link rel="stylesheet" href="ASSET/CSS/grid.css">
     <link rel="stylesheet" href="ASSET/CSS/Dashboard.css">
     <title>Travelix Admin</title>
@@ -111,7 +111,7 @@
                         <i class="fa-solid fa-angle-right"></i>
                         <ul class="Item__Manager__Lists">
                             <li class="Item__Manager__List">
-                                <a href="#">Item List</a>
+                                <a href="./Item_list.html">Item List</a>
                             </li>
                             <li class="Item__Manager__List">
                                 <a href="#">Item Editor</a>
@@ -186,13 +186,27 @@
                     <canvas id="myChart"></canvas>
                 </div>
             </div>
-            <div class="col l-12 travel_in_countries">
+            <div class="col l-8 m-12 c-12 travel_in_countries">
                 <div class="travel_in_countries_title">
                     <h3>Travel in countries</h3>
                 </div>
                 <div class="travel_in_countries_map">
                     <img src="ASSET/IMG/Dashboard/map.png" alt="Travel in countries">
                 </div>
+            </div>
+            <div class="card_task col l-4 m-12 c-12">
+                <h3>Tast</h3>
+                <form action="">
+                    <div class="add">
+                        <input type="text" placeholder="Enter To Do">
+                        <button type="submit">ADD</button>
+                    </div>
+                    <div class="Todo_List">
+                        <ul>
+                           <li class="hollow">Danh sách rỗng</li>
+                        </ul>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

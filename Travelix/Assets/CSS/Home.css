@@ -296,6 +296,7 @@
     align-items: center;
     font-weight: 600;
     background-color: #fff;
+    transition: all .3s linear;
 }
 .search__tab img{
    padding-right: 7px;
@@ -305,6 +306,12 @@
     color: #fff;
 }
 .search__tab input:checked+label>img{
+    filter: brightness(200);
+}
+.search__tab input:hover+label{
+    background-color: #fa9e1b;
+}
+.search__tab input:hover+label>img{
     filter: brightness(200);
 }
 /* ---------------------------------------------------- */
@@ -690,15 +697,18 @@
 .trending__container__item__img{
     overflow: hidden;
     background-color: transparent;
+    height: 100%;
 }
 .trending__container__item__img img{
     max-width: 100%;
+    max-height: 100%;
+    transform: scale(1);
+    transition: all .3s linear;
 }
 .trending__container__item img:hover{
-    transform: rotate(5deg);
-    transition: all .3s linear;
-    
+    transform: scale(1.2) rotate(5deg);
 }
+
 .trending__container__item a{
     display: block;
     font-size: 16px;
@@ -896,6 +906,9 @@ footer.grid{
     text-transform: uppercase;
     margin-bottom: 38px;
 }
+.footer__container__col2__text{
+    margin-left: 15px;
+}
 .footer__container__col2__text a {
     font-size: 14px;
     font-weight: 400;
@@ -910,7 +923,7 @@ footer.grid{
 }
 .footer__container__col2__item{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 20px;
 }
 .footer__container__col3 h2{
@@ -1105,7 +1118,6 @@ footer.grid{
         padding: 5px;
         margin-top: 5px;
         background-color: unset;
-       
     }
     .search__tab label{
         height: 62px;

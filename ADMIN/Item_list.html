@@ -1,21 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="shortcut icon" href="ASSET/IMG/Item_list/logo_title.ico">
     <link rel="stylesheet" href="ASSET/CSS/grid.css">
+    <link rel="shortcut icon" href="ASSET/IMG/Item_list/logo_title.ico">
     <link rel="stylesheet" href="ASSET/CSS/Item_list.css">
     <title>Admin Travalix</title>
 </head>
+
 <body>
-    <div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quaerat impedit veniam nostrum odio aliquam neque quasi. Voluptatibus perferendis commodi cumque pariatur, quas odit voluptas asperiores earum harum corporis incidunt.</p>
+    <div class="gird">
+        <div class="row">
+            <div class="sidebar col l-2 m-3">
+                <div class="sidebar__container">
+                    <div class="sidebar__header">
+                        <div class="sidebar__haeder-logo">
+                            <div class="sidebar__haeder-logo-img">
+                                <img src="ASSET/IMG/Dashboard/logo.webp" alt="">
+                            </div>
+                            <span>Modular Admin</span>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu__lists">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <a href="#">Item Manager</a>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <ul class="Item__Manager__Lists">
+                                    <li class="Item__Manager__List">
+                                        <a href="#">Item List</a>
+                                    </li>
+                                    <li class="Item__Manager__List">
+                                        <a href="#">Item Editor</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Item_list_page col l-10 m-9 c-12">
+                <div class="row">
+                    <header class=" col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="open_sidebar l-0 m-0 c-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="header__search col l-3 m-3 c-0">
+                                <input type="text" placeholder="Search...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <div class="header__right col l-9 m-9 c-10">
+                                <div class="notification">
+                                    <i class="fa-solid fa-bell"></i>
+                                    <div class="notification_number">4</div>
+                                    <div class="notification_list">
+                                        <ul>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="account">
+                                    <div class="avata">
+                                        <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                        <div class="user_name-name">
+                                            <span>Bùi Đức Thắng</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+                                        <div class="user_name_dropdown">
+                                            <ul class="user_name_dropdown_lists">
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="Item_list_page_container col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="title_block col l-12 m-12 c-12">
+                                <div class="row">
+                                    <div class=" title_block_container l-6 m-6 c-6">
+                                        <h3>
+                                            Item
+                                        </h3>
+                                        <button>Add New</button>
+                                    </div>
+                                    <div class="title_block_search l-6 m-6 c-6">
+                                        <input type="text" placeholder="search...">
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_items col l-12 m-12 c-12">
+                                <div class="card_items_container">
+                                    <ul class="item_list">
+                                        <li class="item item_header">
+                                            <div class="row">
+                                                <div class="item_checkbox col l-1 m-1 c-1 "  >
+                                                    <input type="checkbox" value="0">
+                                                </div>
+                                                <div class="column_media col l-2 m-2 c-2">
+                                                    <span>Media</span>
+                                                </div>
+                                                <div class="column_name col l-3 m-3 c-3">
+                                                    <span>Name</span>
+                                                </div>
+                                                <div class="column_destinations col l-4 m-4 c-4">
+                                                    <span>travel destinations</span>
+                                                </div>
+                                                <div class="column_edit col l-2 m-2 c-2">
+                                                    <span>Edit</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="row">
+                                                <div class="item_checkbox col l-1 m-1 c-1">
+                                                    <input type="checkbox" >
+                                                </div>
+                                                <div class="column_media col l-2 m-2 c-2">
+                                                    <div class="column_media_img">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="column_name col l-3 m-3 c-3">
+                                                    <div class="column_name_name">
+                                                        <span>grand castle</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_destinations col l-4 m-4 c-4">
+                                                    <div class="Travel_destinations">
+                                                        <span>Grandville</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_edit col l-2 m-2 c-2">
+                                                    <div class="Edit">
+                                                        <i class="fa-solid fa-gear"></i>
+                                                        <div class="Edit_menu">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                            <i class="fa-solid fa-trash-can remove"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="row">
+                                                <div class="item_checkbox col l-1 m-1 c-1">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="column_media col l-2 m-2 c-2">
+                                                    <div class="column_media_img">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="column_name col l-3 m-3 c-3">
+                                                    <div class="column_name_name">
+                                                        <span>grand castle</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_destinations col l-4 m-4 c-4">
+                                                    <div class="Travel_destinations">
+                                                        <span>Grandville</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_edit col l-2 m-2 c-2">
+                                                    <div class="Edit">
+                                                        <i class="fa-solid fa-gear"></i>
+                                                        <div class="Edit_menu">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                            <i class="fa-solid fa-trash-can  remove"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>    
+                                        <li class="item">
+                                            <div class="row">
+                                                <div class="item_checkbox col l-1 m-1 c-1">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="column_media col l-2 m-2 c-2">
+                                                    <div class="column_media_img">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="column_name col l-3 m-3 c-3">
+                                                    <div class="column_name_name">
+                                                        <span>grand castle</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_destinations col l-4 m-4 c-4">
+                                                    <div class="Travel_destinations">
+                                                        <span>Grandville</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_edit col l-2 m-2 c-2">
+                                                    <div class="Edit">
+                                                        <i class="fa-solid fa-gear"></i>
+                                                        <div class="Edit_menu">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                            <i class="fa-solid fa-trash-can  remove"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> 
+                                        <li class="item">
+                                            <div class="row">
+                                                <div class="item_checkbox col l-1 m-1 c-1">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="column_media col l-2 m-2 c-2">
+                                                    <div class="column_media_img">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="column_name col l-3 m-3 c-3">
+                                                    <div class="column_name_name">
+                                                        <span>grand castle</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_destinations col l-4 m-4 c-4">
+                                                    <div class="Travel_destinations">
+                                                        <span>Grandville</span>
+                                                    </div>
+                                                </div>
+                                                <div class="column_edit col l-2 m-2 c-2">
+                                                    <div class="Edit">
+                                                        <i class="fa-solid fa-gear"></i>
+                                                        <div class="Edit_menu">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                            <i class="fa-solid fa-trash-can  remove"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <div class="overlay"></div>
     <script src="ASSET/JS/Item_list.js"></script>
 </body>
+
 </html>

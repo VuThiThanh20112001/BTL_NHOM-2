@@ -20,7 +20,7 @@ header_input.addEventListener('blur', function () {
 // ---------------------------------------------------------
 // open notification
 var notification__content = document.querySelector('.notification__content')
-var notification = document.querySelector('.notification')
+var notification = document.querySelector('.notification i')
 var notification_number = document.getElementById('notification_number')
 notification.addEventListener('click',function(){
     notification__content.classList.toggle('notification__content_open')
@@ -89,4 +89,63 @@ open_sidebar.addEventListener('click',function(){
 coating.addEventListener('click',function(){
     sidebar.classList.remove('open');
     this.classList.remove('presently')
+})
+// ----------------------------------------------------------------------------
+var Todo_input = document.querySelector('.add input');
+var Todo_add = document.querySelector('.add button');
+var Todo_List =document.querySelector('.Todo_List');
+const Todos =localStorage.getItem('Todos')
+
+Todo_add.addEventListener('click',function(e){
+    e.preventDefault();
+    let a = Todo_input.value.trim()
+    let getlocal=localStorage.getItem('Todos');
+    if(getlocal==null){
+        ListArray=[]
+    }
+    else{
+        ListArray=JSON.parse(getlocal)
+    }
+    ListArray.push(Todo_input.value)
+    localStorage.setItem('Todos',JSON.stringify(ListArray))
+    // console.log(ListArray)
+    createE(Todo_input.value)
+    Todo_input.value='';
+    document.querySelector('.hollow').remove()
+})
+function createE(text){
+    let li = document.createElement('li')
+    li.innerHTML= `<span>${text}</span>
+                 <i class="fa-solid fa-trash-can"></i>`;
+    li.querySelector('i').addEventListener('click',function(){
+        this.parentElement.remove()
+        UpdateLocal()
+    })
+    Todo_List.firstElementChild.appendChild(li)
+}
+function UpdateLocal(){
+    let a = Todo_List.querySelectorAll('li')
+    const Todos = []
+    a.forEach(element => {
+        Todos.push(element.innerText);
+    });
+    console.log(Todos)
+    localStorage.setItem('Todos',JSON.stringify(Todos))
+}
+
+// --------
+function showList(){
+    let a = localStorage.getItem('Todos')
+    if(a==null){
+        ListArray=[]
+    }
+    else{
+        ListArray=JSON.parse(a)
+        ListArray.forEach(element => {
+            createE(element)
+        });
+    }
+}
+window.addEventListener('load',function(){
+    showList()
 })
