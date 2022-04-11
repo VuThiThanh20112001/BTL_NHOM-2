@@ -11,6 +11,13 @@ body{
     justify-content: center;
     align-items: center;
 }
+.exit {
+    width: 45px;
+    height: 45px;
+    border: solid 2px #fa9e1b ;
+    border-radius: 50%;
+    margin-right: 8px;
+}
 form{
     background-color: #fff;
     width: 350px;
