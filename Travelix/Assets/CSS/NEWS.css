@@ -123,7 +123,9 @@
     transform: rotate(90deg);
     color: #fff;
 }
-
+.header__nav__container-search a i:hover {
+    color: #fa9e1b;
+}
 /*...*/
 .the_blog_img{
     height: 100vh;
@@ -350,6 +352,9 @@ footer.grid{
     color: #f4f4f8;
     font-size: 12px;
 }
+.footer__container__col1__social i:hover {
+    color: #000;
+}
 .footer__container__col1__social ul li:hover{
     background-color: #fa9e1b;
 }
@@ -364,6 +369,9 @@ footer.grid{
     font-size: 14px;
     font-weight: 400;
     color: #fff;
+}
+.footer__container__col2__text a:hover {
+    color: #fa9e1b;
 }
 .footer__container__col2__text span {
     font-size: 12px;
@@ -422,6 +430,9 @@ footer.grid{
     color: #fff;
     line-height: 2.14;
     cursor: pointer;
+}
+.footer__container__col4 span:hover {
+    color: #fa9e1b;
 }
 /*...*/
 .open__menu{
@@ -487,7 +498,28 @@ footer.grid{
     transform: translateX(0%);
 }
 /*...*/
-@media screen and (min-width:740px) and (max-width:1023px){
+.scroll-top{
+    height: 50px;
+    width: 50px;
+    background-color: #fa9e1b;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 20%;
+    cursor: pointer;
+    display: none;
+}
+.scroll-top i{
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+}
+.scroll-top i:hover {
+    color: #000;
+}
+/*...*/
+@media screen and (min-width:740px) and (max-width:1024px){
     .header__top-left>span,
     .header__top-right a{
         font-size: 10px;
