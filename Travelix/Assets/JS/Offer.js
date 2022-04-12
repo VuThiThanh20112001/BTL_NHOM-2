@@ -7,7 +7,7 @@ window.addEventListener('scroll',function(){
     if(a>1){
         header__nav__container.classList.remove('header__nav__container')
         header__nav__container.classList.add('header__nav__container__scroll')
-        open_menu.style.left='75%';
+        open_menu.style.left='100%';
         open_menu.style.top='5px';
         scroll_top.style.display="block";
     }

@@ -308,7 +308,7 @@ header>.row:first-of-type{
     cursor: pointer;
     position: absolute;
     top: 150%;
-    width: 100%;
+    width: 110%;
     padding:0px 10px;
     background-color: #fff;
     border: 1px solid #9a9898;
@@ -317,6 +317,7 @@ header>.row:first-of-type{
     opacity: 0;
     pointer-events: none;
     transition: all .3s linear;
+    z-index: 100;
 }
 .user_name_dropdown_lists li{
     list-style: none;

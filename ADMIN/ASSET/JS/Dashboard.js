@@ -91,55 +91,60 @@ coating.addEventListener('click',function(){
     this.classList.remove('presently')
 })
 // ----------------------------------------------------------------------------
-var Todo_input = document.querySelector('.add input')
-var Todo_addd = document.querySelector('.add button');
-// var a = document.getElementById('gi')
-// a.
-Todo_addd.addEventListener('click', function (event) {
-    event.preventDefault()
+var Todo_input = document.querySelector('.add input');
+var Todo_add = document.querySelector('.add button');
+var Todo_List =document.querySelector('.Todo_List');
+const Todos =localStorage.getItem('Todos')
+
+Todo_add.addEventListener('click',function(e){
+    e.preventDefault();
     let a = Todo_input.value.trim()
-    if(a) {
-        addTodoList({
-            Text: a,
-        });
-        // saveList();
-        Todo_input.value = '';
+    let getlocal=localStorage.getItem('Todos');
+    if(getlocal==null){
+        ListArray=[]
     }
-})
-var List_add =document.querySelector('.Todo_List ul')
-var hollow_list = document.querySelector('.hollow')
-function addTodoList(Todo) {
-    let li = document.createElement('li')
-        // < li >
-        //     <span>Hi chào cậu</span>
-        //     <i class="fa-solid fa-trash-can"></i>
-        // </li >
-    li.innerHTML = 
-                `<span>${Todo.Text}</span>
-                <i class="fa-solid fa-trash-can"></i>`;
-    li.addEventListener('click',function(){
-        this.classList.toggle('strikethrough')
-    })
+    else{
+        ListArray=JSON.parse(getlocal)
+    }
+    ListArray.push(Todo_input.value)
     
-    let a = li.lastChild;
-    a.addEventListener('click',function(){
+    localStorage.setItem('Todos',JSON.stringify(ListArray))
+    // console.log(ListArray)
+    createE(Todo_input.value)
+    Todo_input.value=''
+})
+function createE(text){
+    let li = document.createElement('li')
+    li.innerHTML= `<span>${text}</span>
+                 <i class="fa-solid fa-trash-can"></i>`;
+    li.querySelector('i').addEventListener('click',function(){
         this.parentElement.remove()
-        count_list(List_add);
-        
+        UpdateLocal()
     })
-    List_add.appendChild(li)
-    hollow_list.classList.add('hiden');
+    Todo_List.firstElementChild.appendChild(li)
 }
-function count_list(a){
-    let b = a.children
-    console.log(b);
-    console.log(b.length)
+function UpdateLocal(){
+    let a = Todo_List.querySelectorAll('li')
+    const Todos = []
+    a.forEach(element => {
+        Todos.push(element.innerText);
+    });
+    console.log(Todos)
+    localStorage.setItem('Todos',JSON.stringify(Todos))
 }
-// const array = [];
-// function saveList(){
-//     array.push(Todo_input.value.trim())
-//     console.log(array)
-//     let c =JSON.stringify(array);
-//     localStorage.setItem('name_task',c);
-//     let d = localStorage.getItem('name_task')
-// }
+// --------
+function showList(){
+    let a = localStorage.getItem('Todos')
+    if(a==null){
+        ListArray=[]
+    }
+    else{
+        ListArray=JSON.parse(a)
+        ListArray.forEach(element => {
+            createE(element)
+        });
+    }
+}
+window.addEventListener('load',function(){
+    showList()
+})
