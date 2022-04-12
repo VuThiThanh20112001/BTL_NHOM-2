@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="ASSET/CSS/grid.css">
+    <link rel="shortcut icon" href="ASSET/IMG/Item_list/logo_title.ico">
+    <link rel="stylesheet" href="ASSET/CSS/Edit_Item.css">
+    <title>Admin Travalix</title>
+</head>
+
+<body>
+    <div class="gird">
+        <div class="row">
+            <div class="sidebar col l-2 m-3">
+                <div class="sidebar__container">
+                    <div class="sidebar__header">
+                        <div class="sidebar__haeder-logo">
+                            <div class="sidebar__haeder-logo-img">
+                                <img src="ASSET/IMG/Dashboard/logo.webp" alt="">
+                            </div>
+                            <span>Modular Admin</span>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu__lists">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <a href="#">Item Manager</a>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <ul class="Item__Manager__Lists">
+                                    <li class="Item__Manager__List">
+                                        <a href="#">Item List</a>
+                                    </li>
+                                    <li class="Item__Manager__List">
+                                        <a href="#">Item Editor</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Item_list_page col l-10 m-9 c-12">
+                <div class="row">
+                    <header class=" col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="open_sidebar l-0 m-0 c-2">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="header__search col l-3 m-3 c-0">
+                                <input type="text" placeholder="Search...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <div class="header__right col l-9 m-9 c-10">
+                                <div class="notification">
+                                    <i class="fa-solid fa-bell"></i>
+                                    <div class="notification_number">4</div>
+                                    <div class="notification_list">
+                                        <ul>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                            <li class="notification_item">
+                                                <div class="notification_item_img">
+                                                    <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                                </div>
+                                                <div class="notification_item_content">
+                                                    <span class="notification_item_name">Bùi Cường</span>
+                                                    <span>đã đánh giá</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="account">
+                                    <div class="avata">
+                                        <img src="ASSET/IMG/Item_list/user_name_img.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                        <div class="user_name-name">
+                                            <span>Bùi Đức Thắng</span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+                                        <div class="user_name_dropdown">
+                                            <ul class="user_name_dropdown_lists">
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user icon"></i>
+                                                    <a href="#">Profile</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="Edit_item_page_container col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="title_block col l-12 m-12 c-12">
+                                <h3> Add new item </h3>
+                            </div>
+                            <div class="card_edit_block col l-12 m-12 c-12">
+                                <div class="row">
+                                    <div class="card_edit_block_name col l-12 m-12 c-12">
+                                        <div class="row">
+                                            <label for="card_name" class="col l-3  m-3 c-3">
+                                                Name:
+                                            </label>
+                                            <input type="text" name="" id="card_name" class="col l-9 m-9 c-9" placeholder="Please fill in the content">
+                                        </div>
+                                        <div class="row">
+                                            <label for="Travel_destinations" class="col l-3 m-3 c-3">
+                                                Travel destinations:
+                                            </label>
+                                            <input type="text" name="" id="Travel_destinations" class="col l-9 m-9 c-9" placeholder="Please fill in the content">
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <label for="content" class="col l-3 m-3 c-3">
+                                                Content:
+                                            </label>
+                                            <textarea name="" id="content" cols="30" rows="10" class="col l-9 m-9 c-9" placeholder="Please fill in the content"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col l-3 m-3 c-3">
+                                                <span class="cnt_img">Image:</span>
+                                            </div>
+                                            <div class=" l-9 m-9 c-9 img_container_block">
+                                                <div class="img_block_item">
+                                                    
+                                                </div>
+                                                <div class="img_block_item">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button>Submit</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="ASSET/JS/Edit_Item.js"></script>
+</body>
+
+</html>

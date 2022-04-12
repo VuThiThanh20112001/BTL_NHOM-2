@@ -290,7 +290,6 @@ header.row{
     border-radius: 10px;
     z-index: 1000;
     overflow: hidden;
-    pointer-events: none;
 }
 .user__name--menu_dropdown li{
     list-style: none;
@@ -315,7 +314,6 @@ header.row{
 .user__name--menu_dropdown.menu_dropdown_click{
     transform: translateY(0%);
     opacity: 1;
-    pointer-events: unset;
 }
 /* ---------------------------------------------------------------- */
 /* dashboard_page CSS */
